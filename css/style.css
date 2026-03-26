@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+
+.ballet {
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-iso-regular {
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.clouds {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.clouds img {
+    width: max-content;
+    height: max-content;
+    display: block;
+}
+
+.h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #00d0ff;
+    font-family: 'Rubik iso';
+}
+
+.h1 h3 {
+    font-size: 25px;
+    color: #00d0ff;
+    font-family: 'rubik iso';
+}
+
+.h2 {
+    position: absolute;
+    top: 91.8%;
+    font-size: 50px;
+    color: #00d0ff;
+    font-family: 'impact';
+}
+
+.h2 h2 {
+    font-size: 25px;
+    top: 130%;
+    
+    color: #00d0ff;
+    font-family: 'Rubik iso';
+}
+
+.h2 h3 {
+    font-size: 50px;
+;
+    color: #00d0ff;
+    font-family: 'Ballet';
+}
+
+.link1 {
+    font-family: 'Rubik iso';
+    position: absolute;
+    top: 500%;
+}
