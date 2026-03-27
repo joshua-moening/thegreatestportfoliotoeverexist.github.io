@@ -11,6 +11,36 @@ body {
     background: #ffffff;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
+}
+
+.column {
+  flex: 25%; /* Creates four equal columns (100% / 4 = 25%) */
+  max-width: 25%;;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%; /* Image takes the full width of its column */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%; /* Becomes a two-column layout */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%; /* Becomes a single-column layout, stacking vertically */
+  }
+}
 
 .ballet {
     font-family: "Ballet", cursive;
@@ -25,42 +55,34 @@ body {
     font-style: normal;
 }
 
-
-.clouds {
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    background-color: rgb(255, 255, 255);
-}
-
-.clouds img {
-    width: max-content;
-    height: max-content;
-    display: block;
-}
-
 .h1 {
     position: absolute;
     top: 20%;
     left: 30%;
     transform: translate(-50%, -50%);
     font-size: 25px;
-    color: #00d0ff;
+    color: #ffffff;
     font-family: 'Rubik iso';
+}
+
+.h1 h1{
+    font-size: 80px;
+    color: #ff0011;
+    font-family: 'rubik iso';
 }
 
 .h1 h3 {
 
     font-size: 25px;
-    color: #00d0ff;
+    color: #ffffff;
     font-family: 'rubik iso';
 }
 
 .h2 {
     position: absolute;
-    top: 40%;
-    left: 33%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
     font-size: 50px;
     color: #00d0ff;
     font-family: 'impact';
@@ -73,16 +95,19 @@ body {
     font-family: 'Rubik iso';
 }
 
-.h2 h3 {
-    font-size: 50px;
-;
-    color: #00d0ff;
+.h3 {
+    position: absolute;
+    top: 120%;
+    left: 21%;
+    font-size: 30px;
+    color: #ff00c8;
     font-family: 'Ballet';
 }
 
+
 .linky {
     position: absolute;
-    top: 80%;
+    top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -96,4 +121,35 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+
+.doto-regular {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+.painter {
+    position: absolute;
+    top: 255%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    font-size: 25px;
+    font-family: "Doto", sans-serif;
+    color: #ff00c8;
+}
+
+.iframething {
+    position: absolute;
+    top: 325%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
 }
