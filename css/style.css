@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto new lines */
+}
+
+.column {
+  flex: 25%; /* Creates four equal columns (100% / 4 = 25%) */
+  max-width: 25%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%; /* Image takes the full width of its column */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%; /* Becomes a two-column layout */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%; /* Becomes a single-column layout, stacking vertically */
+  }
+}
+
+.ballet {
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-iso-regular {
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ======================================================
+   IMAGE GROUP WRAPPERS
+   Each wrapper is the "positioning context" for its own
+   overlay text. position: relative here does NOT move
+   the wrapper itself — it just means "any absolutely
+   positioned child inside me is measured relative to MY
+   box, not the whole page." Because each group's box
+   height is set entirely by its own images/gifs, the text
+   inside it stays correctly centered on those images at
+   any screen width, without needing separate values per
+   breakpoint.
+   ====================================================== */
+.cloudsgroup,
+.babiesgroup,
+.clownsgroup {
+    position: relative;
+    width: 100%;
+}
+
+/* ======================================================
+   SHARED OVERLAY RULE
+   top/left 50% + translate(-50%, -50%) centers the text
+   block both horizontally and vertically within its
+   *parent* group wrapper (not the viewport), since the
+   parent is the nearest positioned ancestor.
+   ====================================================== */
+.cloudstxt,
+.babiestxt,
+.clownstxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    z-index: 10;
+    /* soft shadow keeps text legible over busy/bright gif backgrounds */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.cloudstxt {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: #ffffff;
+    font-family: 'Rubik iso';
+}
+
+.cloudstxt h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: #ff0011;
+    font-family: 'rubik iso';
+}
+
+.cloudstxt h3 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: #ffffff;
+    font-family: 'rubik iso';
+}
+
+.babiestxt {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: #00d0ff;
+    font-family: 'impact';
+}
+
+.babiestxt h2 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #00d0ff;
+    font-family: 'Rubik iso';
+}
+
+.babiestxt h3 {
+    font-size: clamp(1.2rem, 4vw, 1.875rem);
+    color: #ff00c8;
+    font-family: 'Ballet';
+}
+
+.clownstxt {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-family: "Bebas Neue", sans-serif;
+    color: #00ff37;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.doto-regular {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+/* ======================================================
+   PAINTER SECTION
+   No image group to overlay, so this stays in normal
+   document flow (position: static / default) below the
+   three image groups above.
+   ====================================================== */
+.paintertxt {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-family: "Doto", sans-serif;
+    color: #ff00c8;
+}
+
+.iframething {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.iframething iframe {
+    width: 100%;
+    max-width: 750px;
+    height: 1000px;
+    border: none;
+}
