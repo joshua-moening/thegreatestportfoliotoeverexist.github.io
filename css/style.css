@@ -92,8 +92,6 @@ body {
     width: 90%;
     text-align: center;
     z-index: 10;
-    /* soft shadow keeps text legible over busy/bright gif backgrounds */
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .cloudstxt {
