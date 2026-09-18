@@ -178,4 +178,6 @@ body {
     max-width: 750px;
     height: 1000px;
     border: none;
+    display: flex; 
+    justify-content: center;
 }
