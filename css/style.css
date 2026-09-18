@@ -56,7 +56,7 @@ body {
     font-style: normal;
 }
 
-.h1 {
+.cloudstxt {
     position: static;
     transform: none;
     widith:100%
@@ -67,19 +67,19 @@ body {
     font-family: 'Rubik iso';
 }
 
-.h1 h1{
+.cloudstxt h1{
     font-size: clamp(2.5rem, 8vw, 5rem);
     color: #ff0011;
     font-family: 'rubik iso';
 }
 
-.h1 h3 {
+.cloudstxt h3 {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: #ffffff;
     font-family: 'rubik iso';
 }
 
-.h2 {
+.babiestxt {
     position: static;
     width: 100%;
     text-aligh: center;
@@ -89,13 +89,13 @@ body {
     font-family: 'impact';
 }
 
-.h2 h2 {
+.babiestxt h2 {
     font-size: clamp(1rem, 2vw, 1.5rem);
     color: #00d0ff;
     font-family: 'Rubik iso';
 }
 
-.h3 {
+.babiestxt h3 {
     position: static;
     widith: 100%;
     text-align:center;
@@ -106,7 +106,7 @@ body {
 }
 
 
-.linky {
+.clownstxt {
     position: static;
     width:100%;
     transform: none;
@@ -134,7 +134,7 @@ body {
     "ROND" 0;
 }
 
-.painter {
+.painter txt {
     position: static;
     transform: none;
     text-align: center;
