@@ -62,7 +62,7 @@ body {
     widith:100%
     text-align: center;
     font-size: clamp(1rem, 3vw, 1.5rem);
-    padding: 2rem 1rem;
+    padding: 3rem 1rem 1rem
     color: #ffffff;
     font-family: 'Rubik iso';
 }
@@ -81,6 +81,8 @@ body {
 
 .h2 {
     position: static;
+    width: 100%;
+    text-aligh: center;
     transform: none;
     font-size: clamp(1.5rem, 5vw, 3rem);
     color: #00d0ff;
@@ -95,7 +97,10 @@ body {
 
 .h3 {
     position: static;
+    widith: 100%;
+    text-align:center;
     font-size: clamp(1.2rem, 4vw, 1.875rem);
+    padding: 2rem 1rem;
     color: #ff00c8;
     font-family: 'Ballet';
 }
@@ -103,8 +108,10 @@ body {
 
 .linky {
     position: static;
+    width:100%;
     transform: none;
     text-align: center;
+    padding: 2rem 1rem;
     z-index: 10;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-family: "Bebas Neue", sans-serif;
@@ -139,7 +146,17 @@ body {
 
 .iframething {
     position: static;
+    width:100%;
+    margin: 0 auto 3rem;
+    max-width: 750px;
     transform: none;
     text-align: center;
     z-index: 10;
 }
+
+.iframething iframe {
+    width:100%;
+    max-width:750px;
+    height:1000px;
+    border: none;
+    }
