@@ -56,24 +56,24 @@ body {
 }
 
 .h1 {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
+    position: static;
+    transform: none;
+    widith:100%
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    padding: 2rem 1rem;
     color: #ffffff;
     font-family: 'Rubik iso';
 }
 
 .h1 h1{
-    font-size: 80px;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     color: #ff0011;
     font-family: 'rubik iso';
 }
 
 .h1 h3 {
-
-    font-size: 25px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: #ffffff;
     font-family: 'rubik iso';
 }
@@ -83,13 +83,13 @@ body {
     top: 80%;
     left: 50%;
     transform: translate(-50%);
-    font-size: 50px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     color: #00d0ff;
     font-family: 'impact';
 }
 
 .h2 h2 {
-    font-size: 25px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     top: 130%;
     color: #00d0ff;
     font-family: 'Rubik iso';
@@ -99,7 +99,7 @@ body {
     position: absolute;
     top: 120%;
     left: 21%;
-    font-size: 30px;
+    font-size: clamp(1.2rem, 4vw, 1.875rem);
     color: #ff00c8;
     font-family: 'Ballet';
 }
@@ -112,7 +112,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 10;
-    font-size: 25px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-family: "Bebas Neue", sans-serif;
     color: #00ff37;
 }
@@ -140,7 +140,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 10;
-    font-size: 25px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     font-family: "Doto", sans-serif;
     color: #ff00c8;
 }
